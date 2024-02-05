@@ -25,10 +25,21 @@ const App = () => {
     });
   };
 
+  // handler for when a quote is deleted on existing list
+  const deleteQuoteHandler = (quoteID) => {
+    setQuotes((prevQuotes) => {
+      const updatedQuotes = prevQuotes.filter((q) => q.id !== quoteID);
+      return updatedQuotes;
+    });
+  };
+
   return (
     <div className="App">
       <QuoteList items={quotes} />
-      <QuoteInput onAddQuote={addQuoteHandler} />
+      <QuoteInput
+        onAddQuote={addQuoteHandler}
+        onDeleteItem={deleteQuoteHandler}
+      />
     </div>
   );
 };

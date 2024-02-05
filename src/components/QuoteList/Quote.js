@@ -1,9 +1,11 @@
 const Quote = (props) => {
+  const deleteHandler = () => {
+    props.onDelete(props.id);
+  };
+
   return (
-    <li>
-      <div className="quote-display">
-        <h2>{props.sentence}</h2>
-      </div>
+    <li className="quote-display" onClick={deleteHandler}>
+      {props.sentence}
     </li>
   );
 };

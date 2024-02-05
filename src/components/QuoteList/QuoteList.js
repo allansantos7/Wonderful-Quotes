@@ -13,7 +13,11 @@ const QuoteList = (props) => {
       </div>
       <ul className="quote-list__items">
         {props.items.map((q) => (
-          <Quote key={q.id} sentence={q.sentence} />
+          <Quote
+            key={q.id}
+            sentence={q.sentence}
+            onDelete={props.onDeleteItem}
+          />
         ))}
       </ul>
     </div>
