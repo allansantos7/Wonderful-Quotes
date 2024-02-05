@@ -1,7 +1,11 @@
 const Quote = (props) => {
-  <div className="quote-display">
-    <div className="quote-display__item">{props.sentence}</div>
-  </div>;
+  return (
+    <li>
+      <div className="quote-display">
+        <h2>{props.sentence}</h2>
+      </div>
+    </li>
+  );
 };
 
 export default Quote;
