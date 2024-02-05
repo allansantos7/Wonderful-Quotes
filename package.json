@@ -1,0 +1,15 @@
+{
+  "name": "create-wonderful-quotes",
+  "description": "description",
+  "version": "0.0.0",
+  "author": "allansantos7 <allansantos@mail.weber.edu>",
+  "bin": "src/cli.js",
+  "files": [
+    "src",
+    "templates"
+  ],
+  "dependencies": {
+    "create-create-app": "^7.3.0"
+  },
+  "license": "Zlib"
+}
