@@ -1,4 +1,7 @@
+import React from "react";
+
 const Quote = (props) => {
+
   const deleteHandler = () => {
     props.onDelete(props.id);
   };

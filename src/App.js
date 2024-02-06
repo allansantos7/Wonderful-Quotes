@@ -35,10 +35,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <QuoteList items={quotes} />
+      <QuoteList items={quotes} onDeleteItem={deleteQuoteHandler}/>
       <QuoteInput
         onAddQuote={addQuoteHandler}
-        onDeleteItem={deleteQuoteHandler}
       />
     </div>
   );

@@ -14,7 +14,7 @@ const QuoteList = (props) => {
       <ul className="quote-list__items">
         {props.items.map((q) => (
           <Quote
-            key={q.id}
+            id={q.id}
             sentence={q.sentence}
             onDelete={props.onDeleteItem}
           />
