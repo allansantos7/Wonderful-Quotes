@@ -3,20 +3,9 @@ import QuoteInput from "./components/QuoteInput/QuoteInput";
 import QuoteList from "./components/QuoteList/QuoteList";
 import { useState } from "react";
 
-const DUMMY_QUOTES = [
-  {
-    id: "q1",
-    sentence: "here's a quote",
-  },
-  {
-    id: "q2",
-    sentence: "another quote",
-  },
-];
-
 const App = () => {
   // state handler for quote
-  const [quotes, setQuotes] = useState(DUMMY_QUOTES);
+  const [quotes, setQuotes] = useState("");
 
   // handler for when a quote is added to existing list
   const addQuoteHandler = (quote) => {
@@ -35,10 +24,14 @@ const App = () => {
 
   return (
     <div className="App">
+      <div>
       <QuoteList items={quotes} onDeleteItem={deleteQuoteHandler}/>
+      </div>
+      <div className="quote-form">
       <QuoteInput
         onAddQuote={addQuoteHandler}
       />
+      </div>
     </div>
   );
 };

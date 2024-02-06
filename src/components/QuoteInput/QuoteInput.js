@@ -22,6 +22,7 @@ const QuoteInput = (props) => {
     };
     props.onAddQuote(quoteData); // call function in App
   };
+  
   return (
     <div>
       <div className="quote-display">

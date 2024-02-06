@@ -1,0 +1,12 @@
+.quote-display {
+    display: inline-block;
+    height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(50, 90, 140, .3);
+    padding-top: 55px;
+    transition: all 200ms ease-in-out;
+    width: 300px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8) inset;
+  }

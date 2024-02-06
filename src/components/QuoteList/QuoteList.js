@@ -1,25 +1,31 @@
 import Quote from "./Quote";
+import "./QuoteList.css";
 
 const QuoteList = (props) => {
+  
   // display if no quotes
   if (props.items.length === 0) {
-    return <h2>No quotes</h2>;
+    return (
+      <div className="quote-list__header">
+        <h1>No quotes</h1>
+      </div>
+    );
   }
 
   return (
     <div className="quote-list">
       <div className="quote-list__header">
-        <h1>Your list of Quotes</h1>
+        <h1>Quotes</h1>
       </div>
-      <ul className="quote-list__items">
         {props.items.map((q) => (
-          <Quote
-            id={q.id}
-            sentence={q.sentence}
-            onDelete={props.onDeleteItem}
-          />
+          <ul className="quote-list__items">
+            <Quote
+              id={q.id}
+              sentence={q.sentence}
+              onDelete={props.onDeleteItem}
+            />
+          </ul>
         ))}
-      </ul>
     </div>
   );
 };
