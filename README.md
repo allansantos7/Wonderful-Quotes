@@ -9,7 +9,7 @@ Description:
   The user will also be able to remove the quote they added by clicking it.
 
 Goals:
-  -Will take a quote from the user using a text area input field and a button to submit the quote.
-  -The quote will be added to the page in a list or column/row when submitted.
-  -When the user clicks a quote on the list or column/row, it will delete that quote.
-  -If the user submits a blank text area, do not allow them to submit and show the user some error with color.
+  -Will take a quote from the user using a text area input field and a button to submit the quote. </br>
+  -The quote will be added to the page in a list or column/row when submitted. </br>
+  -When the user clicks a quote on the list or column/row, it will delete that quote. </br>
+  -If the user submits a blank text area, do not allow them to submit and show the user some error with color. </br>
